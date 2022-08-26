@@ -1,7 +1,8 @@
 import React from "react";
+import { Section } from "../Utilities";
 
 const Blog = () => {
-  return <div>Blog</div>;
+  return <Section id="blog">Blog</Section>;
 };
 
 export default Blog;

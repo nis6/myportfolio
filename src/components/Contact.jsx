@@ -1,7 +1,8 @@
 import React from "react";
+import { Section } from "../Utilities";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Section id="contact">Contact</Section>;
 };
 
 export default Contact;

@@ -11,11 +11,11 @@ import Contact from './components/Contact';
 
 export default function App() {
     return (
-        <div>
+        <div style={{ position: "relative" }}>
             <GlobalStyle />
             <Header />
+            <Nav />
             <About />
-            <Skillset />
             <Portfolio />
             <Blog />
             <Contact />
