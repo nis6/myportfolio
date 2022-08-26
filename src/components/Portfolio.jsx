@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "../Utilities";
 import { H3, H5, Container } from "../Utilities";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 const ProjectContainer = styled.div``;
 

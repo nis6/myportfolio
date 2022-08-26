@@ -155,6 +155,18 @@ export const H5 = styled.h5`
     font-weight: 100;
 `;
 
+export const H1 = styled.h1`
+   font-size: 5rem;
+   color: ${colors.spicy};
+   line-height: 5.5rem;
+ font-weight: 200;
+`;
+export const H2 = styled.h2`
+   font-size: 4rem;
+   color: ${colors.muddy};
+   line-height: 4.5rem;
+ font-weight: 200;
+`;
 export const H3 = styled.h3`
     color: ${colors.hampton};
     font-size: 32px;

@@ -17,7 +17,7 @@ const Skill = styled.div`
 
 const Skillset = () => {
   return (
-    <div>
+    <div style={{ borderLeft: `solid 1px ${colors.beige200}`, paddingLeft: "2rem" }}>
       <H4 style={{ color: colors.bgbrown, fontWeight: "semibold" }}>Skillset</H4>
       <SkillContainer>
         <Skill>ReactJS</Skill>
