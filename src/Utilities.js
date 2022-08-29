@@ -74,10 +74,12 @@ export const Center = styled.div`
 `;
 
 export const Section = styled.section`
+position: relative;
 margin-top: 8rem;
-height: 100vh;
+height: max-content;
 @media (max-width: 1024px) {
     margin-top: 6rem;
+    padding-top: 1rem;
 }
 @media (max-width: 600px) {
  margin-top: 2rem;
@@ -88,7 +90,6 @@ width: 75%;
 display: flex;
 flex-direction: column;
 padding-top: 1rem;
-margin: 0 auto;
 @media (max-width: 1024px) {
     width: 86%;
     padding-top: 0.8rem;

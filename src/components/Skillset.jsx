@@ -2,6 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { colors, H4 } from "../Utilities";
 
+const SkillsetContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px ${colors.beige200};
+  margin-left: 1rem;
+  justify-content: end;
+  margin-top: 1rem;
+  padding: 1rem 0.8rem 0 1.5rem;
+`;
+
 const SkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +27,7 @@ const Skill = styled.div`
 
 const Skillset = () => {
   return (
-    <div style={{ borderLeft: `solid 1px ${colors.beige200}`, paddingLeft: "2rem" }}>
+    <SkillsetContainer>
       <H4 style={{ color: colors.bgbrown, fontWeight: "semibold" }}>Skillset</H4>
       <SkillContainer>
         <Skill>ReactJS</Skill>
@@ -31,7 +41,7 @@ const Skillset = () => {
         <Skill>GitHub</Skill>
         <Skill>Figma</Skill>
       </SkillContainer>
-    </div>
+    </SkillsetContainer>
   );
 };
 

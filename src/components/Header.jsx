@@ -34,8 +34,8 @@ const MainText = styled.div`
   flex-direction: column;
   position: relative;
   width: 45%;
-  top: 28vh;
-  left: 45vw;
+  top: 25vh;
+  left: 52vw;
   margin: 3rem;
   @media (max-width: 1024px) {
     width: 50%;
@@ -57,7 +57,7 @@ const CTA = styled.div`
 
 const Header = () => {
   return (
-    <Section id="top" style={{ margin: "0" }}>
+    <Section id="top" style={{ margin: "0", height: "max-content" }}>
       <header>
         <Container>
           <MainIllustration>
@@ -70,7 +70,13 @@ const Header = () => {
             </CTA>
             <H5>Hello world! I'm</H5>
             <H3 style={{ color: colors.lilac200 }}>Nisha Chauhan</H3>
-            <p style={{ color: colors.beige200 }}>
+            <p
+              style={{
+                color: colors.beige200,
+                textAlign: "justify",
+                textJustify: "inter-word",
+              }}
+            >
               A design oriented frontend developer and, passionate about creating
               modern visual solutions with an eye for details, craves aesthetics,
               obsessed with the idea of creating her own personal library.

@@ -1,17 +1,23 @@
 import React from "react";
-import { Section } from "../Utilities";
-import { H3, H5, Container } from "../Utilities";
+import { colors, Section } from "../Utilities";
+import { H2, H1, Container } from "../Utilities";
 import styled from "styled-components";
 
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+  background-color: ${colors.beige100};
+  height: 100vh;
+  width: 100vw;
+`;
 
 const Portfolio = () => {
   return (
     <Section id="portfolio">
-      <Container style={{ alignItems: "center" }}>
-        <H5>check out my</H5>
-        <H3>Projects</H3>
-      </Container>
+      <ProjectContainer>
+        <div style={{ zIndex: "6" }}>
+          <H2>PROJECTS</H2>
+          <H1>DEVELOPER</H1>
+        </div>
+      </ProjectContainer>
     </Section>
   );
 };
