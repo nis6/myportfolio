@@ -75,16 +75,30 @@ export const Center = styled.div`
 
 export const Section = styled.section`
 position: relative;
-margin-top: 8rem;
+margin-bottom: 8rem;
 height: max-content;
 @media (max-width: 1024px) {
-    margin-top: 6rem;
-    padding-top: 1rem;
+    margin-bottom: 6rem;
 }
 @media (max-width: 600px) {
- margin-top: 2rem;
+ margin-bottom: 2rem;
 }
 `;
+
+
+export const A = styled.a`
+  background: transparent;
+  padding: 0.6rem;
+  border-radius: 65%;
+  display: flex; //display:flex; to an a tag????? that too helps creating better spacing inside the parent container and better shape of hover circle
+  &:hover {
+    background: rgb(72, 71, 63, 0.4);
+  }
+  &:active {
+    background: rgb(72, 71, 63, 0.5);
+  }
+`;
+
 export const Container = styled.div`
 width: 75%;
 display: flex;

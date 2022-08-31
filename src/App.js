@@ -2,6 +2,7 @@ import React from 'react';
 import GlobalStyle from './Utilities';
 import Home from './Pages/Home';
 import { Nav } from './components/Nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 export default function App() {
@@ -9,7 +10,12 @@ export default function App() {
         <div style={{ position: "relative" }}>
             <GlobalStyle />
             <Nav />
-            <Home />
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                </Routes>
+            </BrowserRouter>
+
         </div>
     )
 }

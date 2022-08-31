@@ -5,7 +5,7 @@ import { ImMail } from "react-icons/im";
 import { FaUser, FaPenSquare } from "react-icons/fa";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
-import { colors } from "../Utilities";
+import { colors, A } from "../Utilities";
 import { useState } from "react";
 
 const Navbar = styled.nav`
@@ -23,19 +23,6 @@ const Navbar = styled.nav`
   backdrop-filter: blur(15px);
 `;
 
-const A = styled.a`
-  background: transparent;
-  padding: 0.6rem;
-  border-radius: 65%;
-  display: flex; //display:flex; to an a tag????? that too helps creating better spacing inside the parent container and better shape of hover circle
-  &:hover {
-    background: rgb(72, 71, 63, 0.4);
-  }
-  &:active {
-    background: rgb(72, 71, 63, 0.5);
-  }
-`;
-
 export const Nav = () => {
   const [active, setActive] = useState("#top");
 
@@ -45,14 +32,14 @@ export const Nav = () => {
         <A
           href="#top"
           onClick={() => setActive("#top")}
-          style={{ background: active === "#top" ? "rgb(72, 71, 63, 0.5)" : "" }}
+          style={{ background: active === "#top" ? "rgb(72, 71, 63, 0.4)" : "" }}
         >
           <AiFillHome />
         </A>
         <A
           href="#about"
           onClick={() => setActive("#about")}
-          style={{ background: active === "#about" ? "rgb(72, 71, 63, 0.5)" : "" }}
+          style={{ background: active === "#about" ? "rgb(72, 71, 63, 0.4)" : "" }}
         >
           <FaUser />
         </A>
@@ -60,7 +47,7 @@ export const Nav = () => {
           href="#portfolio"
           onClick={() => setActive("#portfolio")}
           style={{
-            background: active === "#portfolio" ? "rgb(72, 71, 63, 0.5)" : "",
+            background: active === "#portfolio" ? "rgb(72, 71, 63, 0.4)" : "",
           }}
         >
           <BsFillFileEarmarkCodeFill />

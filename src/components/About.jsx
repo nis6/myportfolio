@@ -37,11 +37,15 @@ const PhotoContainer = styled.div`
   position: relative;
   bottom: 0;
   left: -2.9rem;
+  @media (max-width: 1024px) {
+    width: 170%;
+  }
   @media (max-width: 600px) {
-    width: 60%;
+    width: 30%;
     margin-top: 2rem;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 100rem;
   }
 `;
 

@@ -16,6 +16,9 @@ const SkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+  @media (max-width: 1024px) {
+    gap: 0.5rem;
+  }
 `;
 
 const Skill = styled.div`
@@ -23,6 +26,9 @@ const Skill = styled.div`
   padding: 0.75rem 1.2rem;
   border-radius: 0.7rem;
   background-color: ${colors.bgbrown};
+  @media (max-width: 1024px) {
+    padding: 0.5rem 0.8rem;
+  }
 `;
 
 const Skillset = () => {

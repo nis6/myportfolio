@@ -24,8 +24,8 @@ const MainIllustration = styled.div`
   }
   @media (max-width: 600px) {
     position: relative;
-    width: 98%;
-    align-self: center;
+    top: 0;
+    width: 100%;
   }
 `;
 
@@ -33,12 +33,13 @@ const MainText = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 45%;
-  top: 25vh;
+  width: 40%;
+  top: 23vh;
   left: 52vw;
   margin: 3rem;
   @media (max-width: 1024px) {
-    width: 50%;
+    left: 60vw;
+    width: 32%;
   }
   @media (max-width: 600px) {
     position: relative;
@@ -55,18 +56,41 @@ const CTA = styled.div`
   gap: 0.8rem;
 `;
 
+const HeaderContainer = styled(Container)`
+  width: 100%;
+  margin-bottom: 10rem;
+  margin-top: 0;
+  top: 0;
+`;
+
 const Header = () => {
+  const downloadResume = () => {
+    // to fetch files from inside public folder, pass file name only and not the absolute path
+    //React.js Server Convert Public Folder File Access With URL to HTTP Response.
+    fetch("Resume-Nisha_Chauhan.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.download = "Nisha-Chauhan-Resume.pdf";
+        alink.href = fileURL;
+        alink.click();
+      });
+    });
+  };
+
   return (
-    <Section id="top" style={{ margin: "0", height: "max-content" }}>
+    <Section id="top" style={{ height: "max-content" }}>
       <header>
-        <Container>
+        <HeaderContainer>
           <MainIllustration>
             <Image src={mainIllust} />
           </MainIllustration>
           <MainText>
             <CTA>
-              <Button>Download CV</Button>
-              <ReverseButton>Let's talk</ReverseButton>
+              <Button onClick={downloadResume}>Download CV</Button>
+              <a href="#contact">
+                <ReverseButton>Let's talk</ReverseButton>
+              </a>
             </CTA>
             <H5>Hello world! I'm</H5>
             <H3 style={{ color: colors.lilac200 }}>Nisha Chauhan</H3>
@@ -83,7 +107,7 @@ const Header = () => {
             </p>
             <Socials />
           </MainText>
-        </Container>
+        </HeaderContainer>
       </header>
     </Section>
   );
