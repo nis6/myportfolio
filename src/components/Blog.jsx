@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "../Utilities";
 import styled from "styled-components";
-import { colors, H2, H5 } from "../Utilities";
+import { colors, H2 } from "../Utilities";
 import blog1 from "../assets/Github-blog.jpg";
 
 const BlogContainer = styled.div`

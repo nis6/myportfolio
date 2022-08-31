@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, H4, H5, A } from "../Utilities";
+import { colors, H4, A } from "../Utilities";
 import Carousel from "./Carousel";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";

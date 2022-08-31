@@ -16,14 +16,6 @@ const ProjectContainer = styled.div`
   padding: 0 2rem;
 `;
 
-const H21 = styled(H2)`
-  color: ${colors.olive};
-  @media (max-width: 600px) {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-`;
-
 const Portfolio = () => {
   return (
     <Section id="portfolio">

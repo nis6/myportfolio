@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillHome, AiFillProject } from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
 import { BsFillFileEarmarkCodeFill } from "react-icons/bs";
 import { ImMail } from "react-icons/im";
 import { FaUser, FaPenSquare } from "react-icons/fa";

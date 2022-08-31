@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "../Utilities";
 import linkedin from "../assets/linkedIn.svg";
 import twitter from "../assets/twitter.svg";
 import github from "../assets/github.svg";

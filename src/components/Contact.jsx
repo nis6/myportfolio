@@ -89,6 +89,9 @@ const Input = styled.input`
   &:hover {
     border: solid 1px ${colors.hampton};
   }
+  &:focus {
+    border: solid 2px ${colors.red};
+  }
   @media (max-width: 1024px) {
     width: 250px;
   }
@@ -106,6 +109,9 @@ const Textarea = styled.textarea`
   padding: 0.75rem 1.2rem;
   &:hover {
     border: solid 1px ${colors.hampton};
+  }
+  &:active {
+    border: solid 2px ${colors.hampton};
   }
   @media (max-width: 1024px) {
     width: 250px;

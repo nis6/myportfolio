@@ -1,6 +1,6 @@
 import React from "react";
 import { Section } from "../Utilities";
-import { H1, H2, H3, Image, ReverseButton } from "./../Utilities";
+import { H1, H2, H3, Image } from "./../Utilities";
 import me from "../assets/me2bgless.png";
 import lotuslogo from "../assets/lotuslogo.svg";
 import { colors } from "../Utilities";
