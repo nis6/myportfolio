@@ -9,13 +9,16 @@ import { IconContext } from "react-icons";
 const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 1rem;
+  position: relative;
   padding-bottom: 0.7rem;
   background-color: ${colors.beige200};
   border-radius: 0 0rem 2rem 2rem;
   color: ${colors.nightblack};
   width: 27vw;
   height: 80vh;
+
   @media (max-width: 1024px) {
     width: 40vw;
     height: 75vh;
@@ -53,32 +56,33 @@ export default function ProjectCard({
 }) {
   return (
     <ProjectCardContainer>
-      <Carousel images={images} />
-      <H4
-        style={{
-          color: colors.nightblack,
-          padding: "0rem 1rem",
-          marginTop: "-1rem",
-        }}
-      >
-        {name}
-      </H4>
-      <Techstack>
-        {techstack.map((item, index) => (
-          <H51 key={index}>{item}</H51>
-        ))}
-      </Techstack>
-      <p
-        style={{
-          color: colors.armadillo,
-          textAlign: "justify",
-          marginTop: "0.5rem",
-          padding: "0 1rem",
-        }}
-      >
-        {desc}
-      </p>
-
+      <div>
+        <Carousel images={images} />
+        <H4
+          style={{
+            color: colors.nightblack,
+            padding: "0rem 1rem",
+            marginTop: "-1rem",
+          }}
+        >
+          {name}
+        </H4>
+        <Techstack>
+          {techstack.map((item, index) => (
+            <H51 key={index}>{item}</H51>
+          ))}
+        </Techstack>
+        <p
+          style={{
+            color: colors.armadillo,
+            textAlign: "justify",
+            marginTop: "0.5rem",
+            padding: "0 1rem",
+          }}
+        >
+          {desc}
+        </p>
+      </div>
       <IconContext.Provider value={{ color: colors.nightblack, size: "2rem" }}>
         <div
           style={{

@@ -37,6 +37,20 @@ const Portfolio = () => {
 
         <ProjectContainer>
           <ProjectCard
+            name="This Portfolio"
+            techstack={[
+              "JavascriptES6",
+              "React",
+              "Redux",
+              "Firebase",
+              "Styled Components",
+            ]}
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
+            images={"PA"}
+            github="https://github.com/nis6/myportfolio"
+            live="https://portfolio-nisha.netlify.app/"
+          />
+          <ProjectCard
             name="Reader's Attic"
             techstack={[
               "JavascriptES6",
@@ -51,28 +65,61 @@ const Portfolio = () => {
             live="https://readers-attic.netlify.app/"
           />
           <ProjectCard
-            name="This Portfolio"
+            name="Six-Degrees of Seperation"
             techstack={[
               "JavascriptES6",
-              "React",
-              "Redux",
-              "Firebase",
-              "Styled Components",
+              "ReactJS",
+              "Chakra-UI",
+              "Styled-Components",
+              "NPM",
             ]}
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
-            images={"PA"}
+            desc="labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
+            images={"NA"}
+          />
+          <ProjectCard
+            name="NotesApp"
+            techstack={[
+              "JavascriptES6",
+              "Flexbox",
+              "grid",
+              "HTML",
+              "CSS",
+              "LocalStorage API",
+            ]}
+            desc="labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
+            images={"NA"}
           />
           <ProjectCard
             name="Magazine"
+            techstack={["JavascriptES6", "Flexbox", "grid", "HTML", "CSS"]}
+            desc="labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
+            images={"MA"}
+          />
+          <ProjectCard
+            name="Tribute Page"
             techstack={[
               "JavascriptES6",
-              "React",
-              "Redux",
-              "Firebase",
-              "Styled Components",
+              "Flexbox",
+              "grid",
+              "HTML",
+              "CSS",
+              "LocalStorage API",
             ]}
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
-            images={"RA"}
+            desc="labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
+            images={"NA"}
+          />
+          <ProjectCard
+            name="Spotify Clone"
+            techstack={[
+              "JavascriptES6",
+              "Flexbox",
+              "grid",
+              "HTML",
+              "CSS",
+              "LocalStorage API",
+            ]}
+            desc="Coming Soon... "
+            images={"NA"}
           />
         </ProjectContainer>
       </Container>
