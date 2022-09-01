@@ -33,9 +33,11 @@ const SlideButton = styled.button`
   justify-content: space-ar;
   align-items: center;
   cursor: pointer;
+  background: ${colors.beige200};
+  border-radius: 2rem;
   &:hover {
     background: rgb(72, 71, 63, 0.3);
-    border-radius: 2rem;
+    border-radius: 3rem;
   }
   &:active {
     color: ${colors.nightblack};

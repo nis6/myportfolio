@@ -25,7 +25,7 @@ const ProjectCardContainer = styled.div`
     height: max-content;
   }
   @media (max-width: 400px) {
-    width: 90vw;
+    width: 85vw;
   }
 `;
 
@@ -88,13 +88,10 @@ export default function ProjectCard({
             padding: "0rem 0.8rem",
           }}
         >
-          <A
-            href="https://github.com/nis6/Reader-s-Attic"
-            style={{ padding: "0.2rem" }}
-          >
+          <A href={github} style={{ padding: "0.2rem" }}>
             <FaGithub />
           </A>
-          <A href="https://readers-attic.netlify.app/" style={{ padding: "0.2rem" }}>
+          <A href={live} style={{ padding: "0.2rem" }}>
             <BiLinkExternal />
           </A>
         </div>

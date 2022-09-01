@@ -37,7 +37,7 @@ const Portfolio = () => {
 
         <ProjectContainer>
           <ProjectCard
-            name="Magazine"
+            name="Reader's Attic"
             techstack={[
               "JavascriptES6",
               "React",
@@ -47,9 +47,11 @@ const Portfolio = () => {
             ]}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
             images={"RA"}
+            github="https://github.com/nis6/Reader-s-Attic"
+            live="https://readers-attic.netlify.app/"
           />
           <ProjectCard
-            name="Magazine"
+            name="This Portfolio"
             techstack={[
               "JavascriptES6",
               "React",
@@ -58,7 +60,7 @@ const Portfolio = () => {
               "Styled Components",
             ]}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "
-            images={"RA"}
+            images={"PA"}
           />
           <ProjectCard
             name="Magazine"
