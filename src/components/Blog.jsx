@@ -5,8 +5,8 @@ import { colors, H2 } from "../Utilities";
 import blog1 from "../assets/Github-blog.jpg";
 
 const BlogContainer = styled.div`
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: max-content;
   margin-top: 2rem;
   padding: 1rem;
   display: flex;

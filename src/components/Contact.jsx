@@ -6,19 +6,17 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { ReverseButton } from "./../Utilities";
 
 const ContactContainer = styled.div`
-  width: 80%;
+  width: 100%;
   height: max-content;
   display: flex;
-  align-items: start;
+  align-items: center;
+
   justify-content: center;
   gap: 12rem;
   padding-top: 0.5rem;
-  margin: 0rem 6rem;
-
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 2rem;
-    margin: 2rem;
   }
 `;
 
