@@ -48,13 +48,13 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        //?????I don't get how assigning align-items property effects the whole layout
         overflow-x: hidden;
         margin:0;
+        padding: 0;
         background: ${colors.nightblack};
         color: ${colors.hampton};
         font-family: 'Poppins', sans-serif;
-        height: 100%;
         background-image: url(..src/assets/bg-pattern.png);
     }
 `;

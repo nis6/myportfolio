@@ -37,12 +37,12 @@ const MainText = styled.div`
   top: 23vh;
   left: 52vw;
   margin: 3rem;
+
   @media (max-width: 1024px) {
     left: 60vw;
     width: 32%;
   }
   @media (max-width: 600px) {
-    position: relative;
     top: auto;
     left: auto;
     width: 80%;
