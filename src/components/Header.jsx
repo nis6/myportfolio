@@ -101,9 +101,9 @@ const Header = () => {
                 textJustify: "inter-word",
               }}
             >
-              A design oriented frontend developer and, passionate about creating
-              modern visual solutions with an eye for details, craves aesthetics,
-              obsessed with the idea of creating her own personal library.
+              A design oriented frontend web developer, passionate about creating
+              modern visual solutions using code and collecting books to build her
+              own personal library.
             </p>
             <Socials />
           </MainText>

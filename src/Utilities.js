@@ -36,6 +36,13 @@ const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
     display: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: all 5000s  ease-in-out;
+    transition-property: background-color, color, border-color;
+}
     *, *:before, *:after{
         box-sizing: border-box;
         padding: 0;
@@ -77,11 +84,12 @@ export const Section = styled.section`
 position: relative;
 margin-bottom: 8rem;
 height: max-content;
+padding-bottom: 2rem;
 @media (max-width: 1024px) {
     margin-bottom: 6rem;
 }
 @media (max-width: 600px) {
- margin-bottom: 2rem;
+ margin-bottom: 4rem;
 }
 `;
 

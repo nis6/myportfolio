@@ -13,7 +13,7 @@ const Navbar = styled.nav`
   width: max-content;
   padding: 0.7rem 1.7rem;
   position: fixed;
-  z-index: 2;
+  z-index: 200;
   bottom: 1.5rem;
   display: flex;
   gap: 0.8rem;

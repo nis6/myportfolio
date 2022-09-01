@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { GrMail } from "react-icons/gr";
 import { RiWhatsappFill } from "react-icons/ri";
 import { ReverseButton } from "./../Utilities";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactContainer = styled.div`
   width: 100%;
@@ -126,6 +128,26 @@ const FlexBox = styled.div`
 `;
 
 const Contact = () => {
+  const emailForm = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_n2k8erc",
+        "template_uj4urzq",
+        emailForm.current,
+        "KkeBTvnfAIW3qd3P3"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <Section id="contact" style={{ height: "max-content" }}>
       <HeadingContainer>
@@ -160,7 +182,7 @@ const Contact = () => {
           </ContactOption>
         </div>
 
-        <form action="">
+        <form action="" ref={emailForm} onSubmit={sendEmail}>
           <FlexBox>
             <Input type="text" name="name" placeholder="Your Full Name" required />
             <Input type="email" name="email" placeholder="Your Email" required />

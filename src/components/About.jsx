@@ -41,11 +41,13 @@ const PhotoContainer = styled.div`
     width: 170%;
   }
   @media (max-width: 600px) {
-    width: 30%;
+    width: 50%;
     margin-top: 2rem;
+    justify-content: center;
+    align-items: start;
+    bottom: auto;
     left: 50%;
     transform: translate(-50%);
-    border-radius: 100rem;
   }
 `;
 
@@ -83,7 +85,7 @@ const MyImage = styled.img`
   width: 80%;
   z-index: 5;
   @media (max-width: 600px) {
-    width: 100%;
+    width: 70%;
   }
 `;
 
