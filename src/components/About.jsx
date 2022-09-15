@@ -130,15 +130,16 @@ const About = () => {
                 textJustify: "inter-word",
               }}
             >
-              A design oriented frontend developer and, passionate about creating
-              modern visual solutions with an eye for details, craves aesthetics,
-              obsessed with the idea of creating her own personal library.A design
-              oriented frontend developer and, passionate about creating modern
-              visual solutions with an eye for details, craves aesthetics, obsessed
-              with the idea of creating her own personal library.A design oriented
-              frontend developer and, passionate about creating modern visual
-              solutions with an eye for details, craves aesthetics, obsessed with the
-              idea of creating her own personal library.
+              I'm a frontend developer working with the latest web technologies,
+              passionate about creating modern visual solutions through code while
+              still being obsessed with the idea of creating my own personal library.
+              Being creative, artistic, and having an eye for detail, all at the same
+              time are my usual attributes which have helped me discover my zeal for
+              developing technologies and taking design alongside to bring ideas to
+              life. I am always looking for opportunities to upskill myself on areas
+              that mix web technologies with other contemporary fields. Lastly, I'll
+              call myself an aesthetic engineer, Engineer who craves aesthetics and
+              collects books.
             </p>
           </NishaChauhan>
         </SecondContainer>
