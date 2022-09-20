@@ -169,7 +169,7 @@ const Contact = () => {
             <P2>nishachauhan0950@gmail.com</P2>
             <P3 href="mailto:nishachauhan0950@gmail.com">Send a message</P3>
           </ContactOption>
-
+          {/* 
           <ContactOption>
             <P1>
               <RiWhatsappFill />
@@ -179,7 +179,7 @@ const Contact = () => {
             <P3 href="https://web.whatsapp.com/send?phone=+919138139980">
               Send a message
             </P3>
-          </ContactOption>
+          </ContactOption> */}
         </div>
 
         <form action="" ref={emailForm} onSubmit={sendEmail}>
