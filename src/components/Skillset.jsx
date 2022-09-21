@@ -9,7 +9,7 @@ const SkillsetContainer = styled.div`
   margin-left: 1rem;
   justify-content: end;
   margin-top: 1rem;
-  padding: 1rem 0.8rem 0 1.5rem;
+  padding: 1rem 3rem 0 1.5rem;
 `;
 
 const SkillContainer = styled.div`

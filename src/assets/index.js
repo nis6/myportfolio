@@ -11,12 +11,15 @@ import MA2 from "../assets/MA2.png";
 import MA3 from "../assets/MA3.png";
 import MA4 from "../assets/MA4.png";
 import NA1 from "../assets/NA1.png";
+import SA1 from "../assets/SA1.png";
+
 
 const assets = {
     RA: [RA1, RA2, RA3],
     PA: [PA1, PA2, PA3, PA4, PA5],
     MA: [MA1, MA2, MA3, MA4],
-    NA: [NA1]
+    NA: [NA1],
+    SA: [SA1]
 }
 
 export default assets;

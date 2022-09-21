@@ -119,7 +119,7 @@ const Portfolio = () => {
               "LocalStorage API",
             ]}
             desc="Coming Soon... "
-            images={"NA"}
+            images={"SA"}
           />
         </ProjectContainer>
       </Container>

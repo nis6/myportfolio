@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
         @media screen and (min-width: 1000px) {
           font-size: 14px;
         }
+        @media screen and (min-width: 1500px) {
+          font-size: 18px;
+        }
         height: 100%;
         scroll-behavior: smooth;
     }
@@ -108,16 +111,15 @@ export const A = styled.a`
 `;
 
 export const Container = styled.div`
-width: 75%;
+width: 100%;
+height: 100%;
 display: flex;
 flex-direction: column;
 padding-top: 1rem;
 @media (max-width: 1024px) {
-    width: 86%;
     padding-top: 0.8rem;
 }
 @media (max-width: 600px) {
-    width: 90%;
     padding-top: 0.5rem;
 }
 `;

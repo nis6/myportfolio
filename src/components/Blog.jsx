@@ -27,10 +27,9 @@ const BlogCard = styled.a`
   background-color: ${colors.beige200};
   border-radius: 2rem;
   color: ${colors.nightblack};
-  width: 25vw;
-  height: 60vh;
+  width: 30%;
   @media (max-width: 1024px) {
-    width: 30vw;
+    width: 32%;
   }
   @media (max-width: 600px) {
     width: 75vw;
@@ -65,7 +64,12 @@ const BlogLink = styled.a`
 
 const Blog = () => {
   return (
-    <Section id="blog" style={{ padding: "1rem" }}>
+    <Section
+      id="blog"
+      style={{
+        padding: "1rem",
+      }}
+    >
       <div style={{ display: "flex" }}>
         <H2 style={{ color: colors.olive }}>Blog</H2>
         <H2 style={{ color: colors.hampton, transform: "translateX(-97%)" }}>

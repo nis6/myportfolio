@@ -16,12 +16,9 @@ const ProjectCardContainer = styled.div`
   background-color: ${colors.beige200};
   border-radius: 0 0rem 2rem 2rem;
   color: ${colors.nightblack};
-  width: 27vw;
-  height: 80vh;
-
+  width: 27%;
   @media (max-width: 1024px) {
-    width: 40vw;
-    height: 75vh;
+    width: 40%;
   }
   @media (max-width: 600px) {
     width: 75vw;
@@ -43,6 +40,7 @@ const Techstack = styled.div`
 const H51 = styled.div`
   background-color: ${colors.olive};
   border-radius: 0.3rem;
+  color: ${colors.nightblack};
   padding: 0.1rem 0.4rem;
 `;
 

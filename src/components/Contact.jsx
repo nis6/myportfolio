@@ -2,7 +2,6 @@ import React from "react";
 import { Section, H4, colors, H5 } from "../Utilities";
 import styled from "styled-components";
 import { GrMail } from "react-icons/gr";
-import { RiWhatsappFill } from "react-icons/ri";
 import { ReverseButton } from "./../Utilities";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -33,8 +32,8 @@ const HeadingContainer = styled.div`
 const ContactOption = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 100px;
+  width: 15rem;
+  height: 12rem;
   gap: 0.7rem;
   justify-content: center;
   align-items: center;

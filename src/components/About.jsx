@@ -16,32 +16,49 @@ const AboutContainer = styled.div`
   }
 `;
 
-const TextContainer = styled.div`
+const FirstContainer = styled.div`
   display: flex;
   gap: 4rem;
-  height: 40vh;
+  height: 35vh;
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 1rem;
     height: max-content;
   }
 `;
-const PhotoContainer = styled.div`
+
+const SecondContainer = styled.div`
   display: flex;
-  width: 100%;
+  height: 55vh;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 0;
+  border-bottom: ${colors.jumbo} solid 1px;
+  gap: 4rem;
+  @media (max-width: 1024px) {
+    height: max-content;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    height: max-content;
+  }
+`;
+const PhotoContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-basis: 15%;
+  width: 300px;
   flex-direction: column;
   justify-content: end;
   align-items: end;
   background: ${colors.jumbo};
   border-radius: 12rem 12rem 0 0;
-  position: relative;
   bottom: 0;
-  left: -2.9rem;
   @media (max-width: 1024px) {
-    width: 170%;
+    flex-basis: 30%;
   }
   @media (max-width: 600px) {
-    width: 50%;
     margin-top: 2rem;
     justify-content: center;
     align-items: start;
@@ -60,21 +77,11 @@ const LotusContainer = styled.div`
   }
 `;
 
-const SecondContainer = styled.div`
-  display: flex;
-  height: 60vh;
-  gap: 4rem;
-  @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 0.5rem;
-    height: max-content;
-  }
-`;
-
 const NishaChauhan = styled.div`
   display: flex;
+  flex-basis: 70%;
   flex-direction: column;
-  padding: 2rem 2rem 1rem 1rem;
+  padding: 2rem 4rem 2rem 1rem;
   margin: 0.3rem;
   @media (max-width: 600px) {
     padding: 2rem 2rem 1rem 2rem;
@@ -82,7 +89,7 @@ const NishaChauhan = styled.div`
 `;
 
 const MyImage = styled.img`
-  width: 80%;
+  width: 120%;
   z-index: 5;
   @media (max-width: 600px) {
     width: 70%;
@@ -97,17 +104,30 @@ const H31 = styled(H3)`
   }
 `;
 
+const H11 = styled(H1)`
+  @media (min-width: 1500px) {
+    font-size: 9rem;
+  }
+`;
+
+const H21 = styled(H2)`
+  @media (min-width: 1500px) {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+  }
+`;
+
 const About = () => {
   return (
     <Section id="about">
       <AboutContainer>
-        <TextContainer>
-          <div style={{ zIndex: "6" }}>
-            <H2>CREATIVE</H2>
-            <H1>DEVELOPER</H1>
+        <FirstContainer>
+          <div style={{ zIndex: "6", padding: "1rem" }}>
+            <H21>CREATIVE</H21>
+            <H11>DEVELOPER</H11>
           </div>
           <Skillset />
-        </TextContainer>
+        </FirstContainer>
         <SecondContainer>
           <PhotoContainer>
             <LotusContainer>

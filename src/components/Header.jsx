@@ -13,17 +13,29 @@ import Socials from "./Socials";
 import mainIllust from "../assets/Main_Illustration.svg";
 import { Section } from "./../Utilities";
 
+const HeaderContainer = styled(Container)`
+  flex-direction: row;
+  margin-bottom: 10rem;
+  margin-top: 0;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    width: 100%;
+  }
+`;
+
 const MainIllustration = styled.div`
   top: 0;
   left: 0;
-  position: absolute;
+  position: relative;
   width: 55%;
   height: auto;
   @media (max-width: 1024px) {
-    width: 65%;
+    width: 70vw;
   }
   @media (max-width: 600px) {
-    position: relative;
     top: 0;
     width: 100%;
   }
@@ -33,14 +45,14 @@ const MainText = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 40%;
-  top: 23vh;
-  left: 52vw;
+  width: 35%;
+  top: 50%;
+  right: 3%;
   margin: 3rem;
-
   @media (max-width: 1024px) {
-    left: 60vw;
-    width: 32%;
+    width: 55%;
+    top: 30%;
+    right: 3%;
   }
   @media (max-width: 600px) {
     top: auto;
@@ -54,13 +66,6 @@ const CTA = styled.div`
   align-items: start;
   margin: 1rem 0;
   gap: 0.8rem;
-`;
-
-const HeaderContainer = styled(Container)`
-  width: 100%;
-  margin-bottom: 10rem;
-  margin-top: 0;
-  top: 0;
 `;
 
 const Header = () => {
