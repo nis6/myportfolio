@@ -41,6 +41,8 @@ const SecondContainer = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
     height: max-content;
   }
 `;
@@ -63,8 +65,6 @@ const PhotoContainer = styled.div`
     justify-content: center;
     align-items: start;
     bottom: auto;
-    left: 50%;
-    transform: translate(-50%);
   }
 `;
 
