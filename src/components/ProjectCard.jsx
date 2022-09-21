@@ -10,13 +10,13 @@ const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   position: relative;
   padding-bottom: 0.7rem;
   background-color: ${colors.beige200};
   border-radius: 0 0rem 2rem 2rem;
   color: ${colors.nightblack};
-  width: 27%;
+  width: 29%;
   @media (max-width: 1024px) {
     width: 40%;
   }
@@ -87,7 +87,7 @@ export default function ProjectCard({
             display: "flex",
             justifyContent: "start",
             gap: "0.5rem",
-            padding: "0rem 0.8rem",
+            padding: "0.8rem",
           }}
         >
           <A href={github} style={{ padding: "0.2rem" }}>

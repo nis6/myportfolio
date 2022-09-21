@@ -31,21 +31,32 @@ const Skill = styled.div`
   }
 `;
 
+const skills = [
+  "ReactJS",
+  "Webpack",
+  "Babel",
+  "Parcel",
+  "NPM",
+  "Netlify",
+  "JavaScript",
+  "CSS",
+  "HTML",
+  "Python",
+  "AWS",
+  "Docker",
+  "Git",
+  "GitHub",
+  "Figma",
+];
+
 const Skillset = () => {
   return (
     <SkillsetContainer>
       <H4 style={{ color: colors.bgbrown, fontWeight: "semibold" }}>Skillset</H4>
       <SkillContainer>
-        <Skill>ReactJS</Skill>
-        <Skill>JavaScript</Skill>
-        <Skill>CSS</Skill>
-        <Skill>HTML</Skill>
-        <Skill>Python</Skill>
-        <Skill>AWS</Skill>
-        <Skill>Docker</Skill>
-        <Skill>Git</Skill>
-        <Skill>GitHub</Skill>
-        <Skill>Figma</Skill>
+        {skills.map((skill) => (
+          <Skill>{skill}</Skill>
+        ))}
       </SkillContainer>
     </SkillsetContainer>
   );

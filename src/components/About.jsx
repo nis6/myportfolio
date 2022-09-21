@@ -106,14 +106,14 @@ const H31 = styled(H3)`
 
 const H11 = styled(H1)`
   @media (min-width: 1500px) {
-    font-size: 9rem;
+    font-size: 10rem;
   }
 `;
 
 const H21 = styled(H2)`
   @media (min-width: 1500px) {
-    font-size: 7rem;
-    margin-bottom: 2rem;
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -122,7 +122,7 @@ const About = () => {
     <Section id="about">
       <AboutContainer>
         <FirstContainer>
-          <div style={{ zIndex: "6", padding: "1rem" }}>
+          <div style={{ zIndex: "6", padding: "1rem", opacity: "0.9" }}>
             <H21>CREATIVE</H21>
             <H11>DEVELOPER</H11>
           </div>
