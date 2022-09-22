@@ -91,7 +91,7 @@ const Header = () => {
             <Image src={mainIllust} />
           </MainIllustration>
           <MainText>
-            <h6 style={{ color: "red" }}>This portfolio is under construction :)</h6>
+            <h6 style={{ color: "red" }}>Still working on it :)</h6>
             <CTA>
               <Button onClick={downloadResume}>Download CV</Button>
               <a href="#contact">
