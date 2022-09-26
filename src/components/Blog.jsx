@@ -25,9 +25,9 @@ const BlogCard = styled.a`
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-  padding: 0.7rem;
+  padding-top: 0.8rem;
   background-color: ${colors.beige200};
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   color: ${colors.nightblack};
   width: 30vw;
   @media (max-width: 1024px) {
@@ -44,12 +44,12 @@ const BlogCard = styled.a`
 
 const BlogImage = styled.img`
   width: 90%;
+  position: relative;
+  border-radius: 1.5rem;
   object-fit: contain;
   margin-top: 0.5rem;
-  border-radius: 2rem;
   &:hover {
     border: solid 2px transparent;
-    transform: translateY(-1%) translateX(-1%);
   }
 `;
 
@@ -79,7 +79,7 @@ const Blog = () => {
         <BlogLink href="https://medium.com/@nishr09/all-you-need-to-know-about-github-pages-to-deploy-your-first-static-website-33fb2d3b92ef">
           <BlogCard>
             <BlogImage src={blog1} />
-            <p style={{ padding: "0.5rem 1rem" }}>
+            <p style={{ padding: "1rem" }}>
               All you need to know about GitHub Pages: to deploy your first static
               website.
             </p>
@@ -88,7 +88,7 @@ const Blog = () => {
         <BlogLink href="https://blog.nishachauhan.studio/a-detailed-guide-to-webpack-and-module-bundlers-in-general">
           <BlogCard>
             <BlogImage src={webpack} />
-            <p style={{ padding: "0.5rem 1rem" }}>
+            <p style={{ padding: "1rem" }}>
               A detailed guide to webpack and module bundlers in general.
             </p>
           </BlogCard>
