@@ -3,33 +3,35 @@ import { Section } from "../Utilities";
 import styled from "styled-components";
 import { colors, H2 } from "../Utilities";
 import blog1 from "../assets/Github-blog.jpg";
+import webpack from "../assets/webpack.png";
 
 const BlogContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: max-content;
   margin-top: 2rem;
   padding: 1rem;
   display: flex;
+  flex-direction: row;
   justify-content: start;
   flex-wrap: wrap;
   @media (max-width: 600px) {
     justify-content: center;
+    align-items: center;
   }
 `;
 
 const BlogCard = styled.a`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 1rem;
-  padding-bottom: 0.7rem;
+  padding: 0.7rem;
   background-color: ${colors.beige200};
   border-radius: 2rem;
   color: ${colors.nightblack};
-  width: 30%;
+  width: 30vw;
   @media (max-width: 1024px) {
-    width: 32%;
+    width: 32vw;
   }
   @media (max-width: 600px) {
     width: 75vw;
@@ -53,6 +55,7 @@ const BlogImage = styled.img`
 
 const BlogLink = styled.a`
   text-decoration: none;
+  width: max-content;
   &:hover {
     border: solid 2px transparent;
     transform: translateY(-1%) translateX(-1%);
@@ -64,13 +67,8 @@ const BlogLink = styled.a`
 
 const Blog = () => {
   return (
-    <Section
-      id="blog"
-      style={{
-        padding: "1rem",
-      }}
-    >
-      <div style={{ display: "flex" }}>
+    <Section id="blog">
+      <div style={{ display: "flex", padding: "1rem" }}>
         <H2 style={{ color: colors.olive }}>Blog</H2>
         <H2 style={{ color: colors.hampton, transform: "translateX(-97%)" }}>
           Blog
@@ -84,6 +82,14 @@ const Blog = () => {
             <p style={{ padding: "0.5rem 1rem" }}>
               All you need to know about GitHub Pages: to deploy your first static
               website.
+            </p>
+          </BlogCard>
+        </BlogLink>
+        <BlogLink href="https://blog.nishachauhan.studio/a-detailed-guide-to-webpack-and-module-bundlers-in-general">
+          <BlogCard>
+            <BlogImage src={webpack} />
+            <p style={{ padding: "0.5rem 1rem" }}>
+              A detailed guide to webpack and module bundlers in general.
             </p>
           </BlogCard>
         </BlogLink>
