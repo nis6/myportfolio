@@ -3,7 +3,7 @@ import { Section } from "../Utilities";
 import styled from "styled-components";
 import { colors, H2 } from "../Utilities";
 import blog1 from "../assets/Github-blog.jpg";
-import webpack from "../assets/webpack.png";
+import webpack from "../assets/webpack.jpg";
 
 const BlogContainer = styled.div`
   width: 100vw;
