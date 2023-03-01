@@ -15,13 +15,17 @@ const Slider = styled.div`
 `;
 
 const Slide = styled.img`
-  width: 250px;
-  height: 120px;
+  width: 600px;
+  height: 300px;
   object-fit: contain;
   box-shadow: 0.2rem 0.2rem 0.5rem;
-  @media (max-width: 600px) {
-    width: 300px;
-    height: 150px;
+  @media (max-width: 1000px) {
+    width: 450px;
+    height: 250px;
+  }
+  @media (max-width: 500px) {
+    width: 350px;
+    height: 200px;
   }
 `;
 

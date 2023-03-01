@@ -11,6 +11,9 @@ const AboutContainer = styled.div`
   width: 100vw;
   height: 100vh;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   @media (max-width: 600px) {
     height: max-content;
   }
@@ -20,7 +23,7 @@ const FirstContainer = styled.div`
   display: flex;
   gap: 4rem;
   height: 35vh;
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     gap: 1rem;
     height: max-content;

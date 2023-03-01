@@ -207,5 +207,16 @@ export const H4 = styled.h4`
    
 `;
 
+export const ColumnBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+`
+export const RowBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 0.6rem;
+`
+
 export default GlobalStyle;
 
