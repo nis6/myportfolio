@@ -24,7 +24,7 @@ const Slide = styled.img`
     height: 250px;
   }
   @media (max-width: 500px) {
-    width: 350px;
+    width: 300px;
     height: 200px;
   }
 `;
