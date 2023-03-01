@@ -55,7 +55,7 @@ const Skillset = () => {
       <H4 style={{ color: colors.bgbrown, fontWeight: "semibold" }}>Skillset</H4>
       <SkillContainer>
         {skills.map((skill) => (
-          <Skill>{skill}</Skill>
+          <Skill key={skill}>{skill}</Skill>
         ))}
       </SkillContainer>
     </SkillsetContainer>

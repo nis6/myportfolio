@@ -70,6 +70,22 @@ const Portfolio = () => {
             live="https://readers-attic.netlify.app/"
           />
           <ProjectCard
+            name="Legisitify"
+            techstack={[
+              "React",
+              "Redux",
+              "React-router",
+              "Parcel",
+              "React-icons",
+              "chakra-UI",
+              "Styled Components",
+            ]}
+            desc="This website works as a management platform for legal appointments at various lawfirms. Here lawfirms can register their lawyers and individuals can find lawyers best fitting their needs by comparing all the law firms present on this platform, thus having easy access to compare all in one place."
+            images={"LA"}
+            github="https://github.com/nis6/legistify"
+            live="https://nisha-s-notes.netlify.app/"
+          />
+          <ProjectCard
             name="Degrees-of-Seperation"
             techstack={["NPM", "ReactJS", "Chakra-UI", "Styled-Components"]}
             desc="This application implements the concept of Six Degrees of Separation (that all people are six or fewer connections away) to tell about the relationships between two given user profiles, i.e. how many connections it takes to go from User-1 to User-2."

@@ -34,14 +34,14 @@ export const Nav = () => {
           onClick={() => setActive("#top")}
           style={{ background: active === "#top" ? "rgb(72, 71, 63, 0.4)" : "" }}
         >
-          <AiFillHome />
+          <AiFillHome size="2.5rem" />
         </A>
         <A
           href="#about"
           onClick={() => setActive("#about")}
           style={{ background: active === "#about" ? "rgb(72, 71, 63, 0.4)" : "" }}
         >
-          <FaUser />
+          <FaUser size="2.5rem" />
         </A>
         <A
           href="#portfolio"
@@ -50,21 +50,21 @@ export const Nav = () => {
             background: active === "#portfolio" ? "rgb(72, 71, 63, 0.4)" : "",
           }}
         >
-          <BsFillFileEarmarkCodeFill />
+          <BsFillFileEarmarkCodeFill size="2.5rem" />
         </A>
         <A
           href="#blog"
           onClick={() => setActive("#blog")}
           style={{ background: active === "#blog" ? "rgb(72, 71, 63, 0.5)" : "" }}
         >
-          <FaPenSquare />
+          <FaPenSquare size="2.5rem" />
         </A>
         <A
           href="#contact"
           onClick={() => setActive("#contact")}
           style={{ background: active === "#contact" ? "rgb(72, 71, 63, 0.5)" : "" }}
         >
-          <ImMail />
+          <ImMail size="2.5rem" />
         </A>
       </IconContext.Provider>
     </Navbar>

@@ -19,6 +19,12 @@ import SA1 from "../assets/SA1.png";
 import TA1 from "../assets/TA1.png";
 import TA2 from "../assets/TA2.png";
 import TA3 from "../assets/TA3.png";
+import LA1 from "../assets/LA1.png";
+import LA2 from "../assets/LA2.png";
+import LA3 from "../assets/LA3.png";
+import LA4 from "../assets/LA4.png";
+import LA5 from "../assets/LA5.png";
+
 
 
 const assets = {
@@ -29,6 +35,7 @@ const assets = {
     SA: [SA1], //Spotify
     DA: [DA1, DA2, DA3, DA4], //Degrees of Seperation
     TA: [TA1, TA2, TA3], //Tribute Page
+    LA: [LA1, LA2, LA3, LA4, LA5], //Legistify
 }
 
 export default assets;

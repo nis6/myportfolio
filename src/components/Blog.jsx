@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { colors, H2 } from "../Utilities";
 import blog1 from "../assets/Github-blog.jpg";
 import webpack from "../assets/webpack.jpg";
+import roadtrip from "../assets/roadtrip.png";
 
 const BlogContainer = styled.div`
   width: 100vw;
@@ -20,16 +21,18 @@ const BlogContainer = styled.div`
   }
 `;
 
-const BlogCard = styled.a`
+const BlogCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  padding: 1rem;
   padding-top: 0.8rem;
   background-color: ${colors.beige200};
   border-radius: 1.5rem;
   color: ${colors.nightblack};
   width: 30vw;
+  height: 450px;
   @media (max-width: 1024px) {
     width: 32vw;
   }
@@ -90,6 +93,18 @@ const Blog = () => {
             <BlogImage src={webpack} />
             <p style={{ padding: "1rem" }}>
               A detailed guide to webpack and module bundlers in general.
+            </p>
+          </BlogCard>
+        </BlogLink>
+        <BlogLink href="https://www.lecturely.com/pbt/reactjs-project-road-trip-app/reactjs-for-beginners">
+          <BlogCard>
+            <BlogImage src={roadtrip} />
+            <p style={{ padding: "1rem" }} align="justify">
+              A series of technical articles aimed for beginners and intermediate
+              developers, while also taking the learner throgh a step by step guide
+              to a hands-on project. This series talks about ReactJS and its core
+              features, fundamentals, key concepts along with explaining the
+              essential tools of React Ecosystem.
             </p>
           </BlogCard>
         </BlogLink>
