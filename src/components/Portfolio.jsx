@@ -83,7 +83,7 @@ const Portfolio = () => {
             desc="This website works as a management platform for legal appointments at various lawfirms. Here lawfirms can register their lawyers and individuals can find lawyers best fitting their needs by comparing all the law firms present on this platform, thus having easy access to compare all in one place."
             images={"LA"}
             github="https://github.com/nis6/legistify"
-            live="https://nisha-s-notes.netlify.app/"
+            live="https://master--legistify-demo.netlify.app/"
           />
           <ProjectCard
             name="Degrees-of-Seperation"
